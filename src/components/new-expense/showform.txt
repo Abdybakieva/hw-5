@@ -1,0 +1,30 @@
+      {showForm ? (
+        <ExpenseForm
+          onShowForm={newExpenseButtonClickHandler}
+          onNewExpenseAdd={onNewExpenseAdd}
+        />
+      ) : (
+        <Button
+          title="Добавить новый расход"
+          onClick={newExpenseButtonClickHandler}
+        />
+      )}
+
+
+
+
+
+
+
+
+
+
+      export const Input = () => {
+  return (
+    <div className="input-n-button-wrapper">
+      <input type="text"/>
+      <input type="number" />
+      <button >Add User</button>
+    </div>
+  );
+};
